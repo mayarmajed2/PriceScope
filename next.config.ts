@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const withNextIntl = createNextIntlPlugin({
+  // هذا هو المسار إلى ملف request.ts
+  // الافتراضي هو ./src/i18n/request.ts
+  // فلا داعي لذكره إذا كان بنفس هذا المسار.
+});
+
+const nextConfig = {
+  reactStrictMode: true,
+  productionBrowserSourceMaps: true,
+  experimental: {
+    serverActions: {},
+  },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
