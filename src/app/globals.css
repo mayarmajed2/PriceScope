@@ -6,6 +6,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -48,38 +49,42 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: #fef6f9;
+  --foreground: #2c2c2c;
+  --card: #ffffff;
+  --card-foreground: #2c2c2c;
+  --popover: #ffffff;
+  --popover-foreground: #2c2c2c;
+  --primary: #e34f94;
+  --primary-foreground: #ffffff;
+  --secondary: #ffdce5;
+  --secondary-foreground: #2c2c2c;
+  --muted: #f7e6f8;
+  --muted-foreground: #5e5e5e;
+  --accent: #9b59b6;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --border: #f3d7df;
+  --input: #f3d7df;
+  --ring: #9b59b6;
+  --chart-1: #e34f94;
+  --chart-2: #9b59b6;
+  --chart-3: #ffdce5;
+  --chart-4: #f7e6f8;
+  --chart-5: #fef6f9;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #2c2c2c;
+  --sidebar-primary: #e34f94;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ffdce5;
+  --sidebar-accent-foreground: #2c2c2c;
+  --sidebar-border: #f3d7df;
+  --sidebar-ring: #9b59b6;
 }
+
+
+
+
 
 .dark {
   --background: oklch(0.145 0 0);
@@ -122,4 +127,5 @@
   body {
     @apply bg-background text-foreground;
   }
+  
 }
